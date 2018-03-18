@@ -28,8 +28,7 @@ public class Launcher implements Runnable {
         Observable<Integer> filtered = source
                 .map(String::length)
                 .filter(i -> i >= 5);
-        filtered.subscribe(s -> System.out.println("RECEIVED: " +
-                s));
+        filtered.subscribe(s -> System.out.println("RECEIVED (2): " + s));
     }
 
     public static void main(String[] args) {
